@@ -1,21 +1,6 @@
-export function outlineCircle(x, y, r, color, ctx) {
-  ctx.beginPath();
-  ctx.arc(x, y, r, 0, Math.PI * 2);
-  ctx.strokeStyle = color;
-  ctx.lineWidth = 3;
-  ctx.stroke();
-}
-
-export function solidCircle(x, y, r, color, ctx) {
-  ctx.beginPath();
-  ctx.arc(x, y, r, 0, Math.PI * 2);
-  ctx.fillStyle = color;
-  ctx.fill();
-}
-
 export class Color {
   constructor(r, g, b, a) {
-    if (!this.rgbIsValid(r, g, b)) {
+    if (!Color.rgbIsValid(r, g, b)) {
      throw new Error("rgb is not an integer");
     }
     this.r = r
