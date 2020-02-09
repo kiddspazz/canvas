@@ -18,4 +18,4 @@ class Color {
   }
 }
 
-exports.Color = Color;
+module.exports = Color;
