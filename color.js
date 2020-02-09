@@ -1,4 +1,4 @@
-export default class Color {
+class Color {
   constructor(r, g, b, a) {
     if (!Color.rgbIsValid(r, g, b)) {
       throw new Error('rgb is not an integer');
@@ -9,7 +9,7 @@ export default class Color {
     this.a = Number.isInteger(a) ? a : 255;
   }
 
-  returnRGB() {
+  rgbString() {
     return (`rgb(${this.r},${this.g},${this.b})`);
   }
 
@@ -17,3 +17,5 @@ export default class Color {
     return (Number.isInteger(r) && Number.isInteger(g) && Number.isInteger(b));
   }
 }
+
+exports.Color = Color;
