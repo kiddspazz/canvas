@@ -1,0 +1,24 @@
+{
+  "name": "y",
+  "version": "0.0.1",
+  "description": "standard utility functions for canvas",
+  "main": "drawing.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiddspazz/canvas.git"
+  },
+  "keywords": [
+    "drawing",
+    "canvas",
+    "ctx"
+  ],
+  "author": "kiddspazz (https://www.travish.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiddspazz/canvas/issues"
+  },
+  "homepage": "https://github.com/kiddspazz/canvas#readme"
+}
